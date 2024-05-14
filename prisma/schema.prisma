@@ -14,8 +14,22 @@ model User {
   id        Int      @id @default(autoincrement())
   email     String   @unique
   name      String   @unique
-  password  String   @unique
+  password  String   
   createdAt DateTime @default(now())
   updateAt  DateTime @updatedAt
 }
+
+model Books {
+  bookId        Int      @id @default(autoincrement())
+  author      String   
+  location    String   
+  ISBN          Int   @unique
+  publicationYear Date
+  pulisher     String
+  genre        String
+  createdAt DateTime @default(now())
+  updateAt  DateTime @updatedAt
+}
+
+
 
