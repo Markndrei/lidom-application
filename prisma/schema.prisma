@@ -20,15 +20,15 @@ model User {
 }
 
 model Books {
-  bookId        Int      @id @default(autoincrement())
-  author      String   
-  location    String   
-  ISBN          Int   @unique
-  publicationYear Date
-  pulisher     String
-  genre        String
-  createdAt DateTime @default(now())
-  updateAt  DateTime @updatedAt
+  bookId          Int      @id @default(autoincrement())
+  author          String
+  location        String
+  ISBN            Int      @unique
+  publicationYear Int
+  pulisher        String
+  genre           String
+  createdAt       DateTime @default(now())
+  updateAt        DateTime @updatedAt
 }
 
 
